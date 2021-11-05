@@ -267,7 +267,7 @@ with open("badchar_test.bin", "wb") as f:
 ***
 ## Finding a JMP ESP etc in the Right Module
 
-Now that we know how to overwrite the EIP, and we know what characters cannot be used we need to find a piece of assembly that will allow us to execute our shell code. The assembly must exist within a loaded module, and ideally have no protections eg DEP, ALR etc.
+Now that we know how to overwrite the EIP, and we know what characters cannot be used we need to find a piece of assembly that will allow us to execute our shell code. The assembly must exist within a loaded module, and ideally have no protections eg DEP, ASLR etc.
 
 We will use mona.py in conjunction with Immunity Debugger.
 
