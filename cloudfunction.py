@@ -37,7 +37,7 @@ def transfer_log_data():
 
     jsonTAPLogData = get_TAP_logs(api_url, api_service_principal, api_secret)
 
-    if jsonLogData.status = 200
+    if jsonTAPLogData.status = 200
         status = post_to_Sumologic(sumo_endpoint, jsonTAPLogData)
     else status = "Unable to retrieve log data from Proofpoint: " + api_url + ", status code=" + jsonLogData.status
 
